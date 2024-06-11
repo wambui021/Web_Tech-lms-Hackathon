@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Learning Management App</h1>
+
     <form id="register-form">
         <h2>Register</h2>
         <input type="text" name="username" placeholder="Username" required>
@@ -16,15 +17,26 @@
         <input type="text" name="full_name" placeholder="Full Name" required>
         <button type="submit">Register</button>
     </form>
+
     <form id="login-form">
         <h2>Login</h2>
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
+
     <form id="logout-form">
         <button type="submit">Logout</button>
     </form>
+
+    <div id="dashboard">
+        <h1>Welcome, <span id="user-fullname"></span></h1>
+        <h2>Your Selected Courses:</h2>
+        <div id="selected-courses"></div>
+        <h2>All Courses:</h2>
+        <div id="all-courses"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
